@@ -15,7 +15,8 @@
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
 
     <!-- FontAwesome Icons -->
-    <link rel "stylesheet" href="assets/css/font-awesome/css/font-awesome.min.css">
+    <!-- <link rel "stylesheet" href="assets/css/font-awesome/css/font-awesome.min.css"> -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/custom.css">
@@ -120,7 +121,7 @@
           </div>
 
           <div class="col-sm-4">
-            <button class="btn btn-success btn-lg btn-block" type="button" name="button" data-toggle="modal" data-target="#myModal">Click here to subscribe</button>
+            <button class="btn btn-success btn-lg btn-block" data-toggle="modal" data-target="#myModal">Click here to subscribe</button>
           </div>
 
         </div>
@@ -173,13 +174,43 @@
     </footer>
 
     <!-- MODAL ========================================================= -->
-    <div class="">
+    <div class="modal fade" id="myModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
 
+          <div class="modal-header">
+
+            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+
+            <h4 class="modal-title" id="myModalLabel"><i class="fa fa-envelope"></i> Subscribe to our mailing list</h4>
+          </div>
+
+          <div class="modal-body">
+            <p>Simply enter your name and email! As a thank you for joingin us, we're ging to give you one of our best-selling courses, <em>for free!</em></p>
+            <form class="form-inline" role="form">
+              <div class="form-group">
+                <label class="sr-only" for="subscribe-name"> Your first name</label>
+                <input class="form-control" id="subscribe-name" placeholder="Your first name">
+                <label class="sr-only" for="subscribe-email"> and your email</label>
+                <input class="form-control" id="subscribe-email" placeholder="and your email">
+              </div>
+              <input class="btn btn-danger" type="submit" value="Subscribe!">
+            </form>
+
+            <hr>
+
+            <p><small>By providing your email you consent to receiving occasional promotional emails &amp; newsletters. <br>No spam. Just good stuff. We respect your privacy &amp; you may unsubscribe at any time.</small></p>
+
+          </div>
+
+        </div>
+      </div>
     </div>
 
     <!-- BOOTSTRAP CORE JAVASCRIPT -->
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-      <script src="assets/js/jquery-3.1.1.min.js" charset="utf-8"></script>
+      <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+      <!-- <script src="assets/js/jquery-3.1.1.min.js" charset="utf-8"></script> -->
+      <script src="assets/js/bootstrap.min.js" charset="utf-8"></script>
       <script src="assets/js/main.js" charset="utf-8"></script>
 
     <!-- TypeKit Fonts -->
