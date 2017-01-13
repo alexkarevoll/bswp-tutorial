@@ -16,7 +16,7 @@ body {
 
 h1,h2,h3,h4,h5,h6 {
   -webkit-font-smoothing: antialiased;
-  text-rendering: optimizeLegibility;
+  text-rendering: optimizelegibility;
   font-weight: bold;
 }
 
@@ -36,13 +36,23 @@ h4{
   font-size: 18px;
 }
 
+button, input, .btn, a.btn {
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  color: white;
+}
+
 .btn {
   font-weight: bold;
 }
 
-.btn {
+.btn-danger {
   background-color: #dd5638;
   border-color: #d95131;
+}
+
+img {
+  max-width: 100%;
 }
 
 #hero {
@@ -108,4 +118,19 @@ h4{
   color: white;
   font-weight: bold;
   display: block;
+}
+
+/* LAYOUT */
+
+#optin {
+  background: #3e4249;
+  padding: 20px 0;
+  color: white;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-size: 1.2em;
+}
+
+#optin p {
+  margin: 7px 0 0 0;
 }
