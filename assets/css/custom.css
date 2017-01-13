@@ -43,7 +43,7 @@ button, input, .btn, a.btn {
 }
 
 .btn {
-  font-weight: bold;
+  /*font-weight: bold;*/
 }
 
 .btn-danger {
